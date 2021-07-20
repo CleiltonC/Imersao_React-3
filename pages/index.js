@@ -1,5 +1,6 @@
 import MainGrid from "../styles/src/components/MainGrid";
 import Box from "../styles/src/components/Box";
+import Image from "next/image";
 import {
   AlurakutMenu,
   OrkutNostalgicIconSet,
@@ -9,8 +10,10 @@ import { ProfileRelationsBoxWrapper } from "../styles/src/components/profileRela
 const ProfileSidebar = (props) => {
   return (
     <Box>
-      <img
+      <Image
         src={`https://github.com/${props.githubUser}.png`}
+        width={500}
+        height={500}
         style={{ borderRadius: "8px" }}
       />
     </Box>
