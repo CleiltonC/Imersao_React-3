@@ -1,11 +1,11 @@
-import MainGrid from "../styles/src/components/MainGrid";
-import Box from "../styles/src/components/Box";
+import MainGrid from "../src/components/MainGrid";
+import Box from "../src/components/Box";
 import Image from "next/image";
 import {
   AlurakutMenu,
   OrkutNostalgicIconSet,
-} from "../styles/src/lib/fakutCommons";
-import { ProfileRelationsBoxWrapper } from "../styles/src/components/profileRelations";
+} from "../styles/lib/fakutCommons";
+import { ProfileRelationsBoxWrapper } from "../src/components/profileRelations";
 
 const ProfileSidebar = (props) => {
   return (
@@ -15,6 +15,7 @@ const ProfileSidebar = (props) => {
         width={500}
         height={500}
         style={{ borderRadius: "8px" }}
+        alt={"Profile Image"}
       />
     </Box>
   );
@@ -61,7 +62,12 @@ export default function Home() {
                 return (
                   <li key={itemAtual}>
                     <a href={`/users/${itemAtual}`}>
-                      <Image src={`http://github.com/${itemAtual}.png`} />
+                      <Image
+                        src={`http://github.com/${itemAtual}.png`}
+                        width={102}
+                        height={120}
+                        alt={itemAtual}
+                      />
                       <span>{itemAtual}</span>
                     </a>
                   </li>

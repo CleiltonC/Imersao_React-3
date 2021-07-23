@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import "../styles/src/lib/fakutCommons";
+import "../styles/lib/fakutCommons";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
