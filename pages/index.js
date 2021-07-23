@@ -5,7 +5,7 @@ import {
   AlurakutMenu,
   OrkutNostalgicIconSet,
 } from "../styles/lib/fakutCommons";
-import { ProfileRelationsBoxWrapper } from "../src/components/profileRelations";
+import { ProfileRelationsBoxWrapper } from "../src/components/ProfileRelations";
 
 const ProfileSidebar = (props) => {
   return (
